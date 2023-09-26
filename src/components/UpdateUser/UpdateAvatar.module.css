@@ -1,0 +1,69 @@
+/* UpdateAvatar.module.css */
+
+.container {
+    text-align: center; /* Center align the content within the container */
+  }
+
+.h2 {
+  text-align: center;
+}
+
+.avatar-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Adjust the width as needed */
+  gap: 20px; /* Adjust the gap between avatars */
+}
+
+.avatar-item {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add a transition effect for smooth hover animations */
+}
+
+.avatar-item:hover {
+  transform: scale(1.1); /* Scale up the avatar on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.avatar-image {
+  width: 100%; /* Adjust the image width as needed */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Media query for screens smaller than a certain width (e.g., 768px) */
+@media (max-width: 768px) {
+  .avatar-list {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(25% - 10px), 1fr)
+    ); /* Max 4 avatars in a row with a 10px gap */
+    gap: 10px; /* Adjust the gap for mobile */
+  }
+
+  .avatar-item:hover {
+    transform: scale(1.05); /* Slightly scale up on hover for mobile */
+  }
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border-top-color: #000000;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

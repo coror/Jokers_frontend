@@ -1,0 +1,185 @@
+.leader-board-user {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+  max-width: calc(100% - 20px); /* Set maximum width to fit the viewport */
+  margin: 0 auto; /* Center the content horizontally */
+  flex-wrap: wrap; /* Prevent flex items from wrapping */
+  overflow-x: hidden; /* Hide any overflowing content */
+  flex-direction: column; /* Set flex-direction to column */
+  align-items: flex-start; /* Align items to start in column layout */
+  padding: 1rem; /* Add some padding to the user container */
+  box-sizing: border-box; /* Include padding in the total width */
+}
+
+.leader-board-user:hover {
+  background-color: #e5e5e5; /* Light gray background color when hovering */
+  transform: scale(1.05); /* Enlarge the user on hover */
+}
+
+.leaderboard-image img {
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  margin-right: 0.5rem; /* Adjust spacing */
+  border-radius: 30%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.user__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 4rem;
+}
+
+.user__info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.rank {
+  font-size: 1.5rem;
+  width: 2rem; /* Fixed width for the rank */
+  text-align: center; /* Center the rank within the fixed width */
+  margin-right: 1rem; /* Add spacing between rank and avatar */
+  flex-shrink: 0; /* Prevent rank from shrinking */
+}
+
+.user__name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Add space between name and title */
+}
+
+.user__title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #bd8a1c;
+}
+
+/* Adjust .user__group */
+.user__group {
+  font-size: 0.8rem;
+  color: #999999;
+  margin-left: 1rem;
+  flex-grow: 1; /* Allow userGroup to grow and take available space */
+  
+}
+
+/* Modify .user__score */
+.user__score {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #bd8a1c;
+  flex-shrink: 0;
+  min-width: 100px; /* Set a minimum width for userScore */
+  text-align: right;
+}
+
+/* Adjust .user__score-container */
+.user__score-container {
+  flex-shrink: 0;
+  min-width: 100px; /* Set a minimum width for userScore */
+  text-align: right; /* Align userScore to the right */
+  margin-left: 0; /* Push userScore to the right edge */
+}
+
+/* Adjust .user__group-container */
+.user__group-container {
+  flex-shrink: 0;
+  min-width: 150px; /* Set a minimum width for userGroup */
+  text-align: right; /* Align userGroup to the left */
+
+}
+
+
+
+/* Smaller screen styles */
+@media (max-width: 767px) {
+  .user__description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 0.5rem; /* Adjust this margin for spacing */
+    text-align: center; /* Center text on smaller screens */
+  }
+  
+  .user__score-container {
+    flex-shrink: 0;
+    min-width: 100px; /* Set a minimum width for userScore */
+    text-align: center; /* Center text on smaller screens */
+    margin-left: -5rem; /* Adjust this margin for spacing */
+  }
+
+  .leaderboard-image img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+    border-radius: 30%;
+    overflow: hidden;
+    margin-right: -1rem;
+  }
+  
+  .rank {
+    font-size: 1.5rem;
+    width: 2rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+    margin-left: -1rem;
+  }
+  
+  .user__name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: -5rem;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  
+  .user__title {
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #bd8a1c;
+    min-width: 100px;
+    margin-right: 0;
+    text-align: right;
+    margin-right: -4rem;
+  }
+  
+  .user__group {
+    font-size: 0.5rem;
+    color: #999999;
+    margin-left: 2rem; /* Adjust this margin for spacing */
+    margin-right: 1rem;
+    text-align: right;
+    min-width: 100px; /* Increase the min-width to make the group text more visible */
+  }
+
+  .user__score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #bd8a1c;
+    flex-shrink: 0;
+    max-width: 100px;
+    text-align: right;
+    margin-left: 6rem; /* Adjust this margin for spacing */
+    margin-right: -3rem; /* Remove the margin-right for spacing */
+  }
+
+ 
+}
+
+
+

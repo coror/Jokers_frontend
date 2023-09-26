@@ -1,0 +1,94 @@
+/* Center the login form vertically and horizontally */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+/* Style the form */
+.login-form {
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form elements */
+.login-form label {
+  font-size: 1.2rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Add transition to all inputs for consistency */
+}
+
+.login-form input:focus {
+  border: 1px solid #ccc; /* Reset border when input is focused */
+  box-shadow: none; /* Remove box shadow when input is focused */
+}
+
+
+
+/* Add this style for the initial red border */
+.login-form input.login-error {
+  border: 2px solid #f44336; /* Red border for error */
+  box-shadow: 0 0 6px rgba(244, 67, 54, 0.5); /* Red box shadow for error */
+}
+
+/* Style the unfocused (not currently typing) input field with error */
+.login-form input.login-error:not(:focus) {
+  border: 2px solid #f44336; /* Red border for unfocused input with error */
+  box-shadow: 0 0 6px rgba(244, 67, 54, 0.5); /* Red box shadow for unfocused input with error */
+}
+
+/* Adjust the transition for a smooth effect */
+.login-form input.login-error {
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input.login-error:focus {
+  border: 1px solid #ccc; /* Reset border when input is focused */
+  box-shadow: none; /* Remove box shadow when input is focused */
+}
+
+/* Style the error message */
+.login-error p {
+  color: #f44336; /* Red color for error message */
+}
+
+/* Style the loading spinner */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: spin 1s linear infinite;
+}
+
+/* Style the forgot password link */
+.link {
+  color: blue; /* Change the color to your preferred link color */
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.button {
+  margin: 20px auto 0; /* Center the button horizontally and add a top margin */
+  display: block; /* Ensure the button is a block-level element to center it horizontally */
+  text-align: center; /* Center the button's text horizontally */
+}
+
+.error{
+  color: red;
+}

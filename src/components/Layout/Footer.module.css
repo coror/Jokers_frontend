@@ -1,0 +1,16 @@
+.footer {
+  background: #ffffff;
+  color: #999999;
+  padding: 0.5rem;
+  text-align: center;
+  border-top: 1px solid #e0e4e8;
+  font-size: 0.8rem;
+  width: 100%; 
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  flex-shrink: 0;
+  position: fixed;
+  overflow-x: hidden;
+  margin-top: 20px; /* Adjust the value as needed for the desired space */
+}

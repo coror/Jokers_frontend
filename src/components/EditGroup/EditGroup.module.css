@@ -1,0 +1,60 @@
+/* EditGroup.module.css */
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .select-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .select-field:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .select-field {
+      /* Adjust styles for smaller screens */
+      width: 100%; /* Make the dropdown width 100% for smaller screens */
+      /* Add any other necessary styles to make it fit and look good on smaller screens */
+    }
+  }
+
+  .groupContainer {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 0.01rem; /* Adjust the gap value as needed */
+    margin-bottom: 3rem; /* Add margin to create space between groupContainer and roleContainer */
+  }
+  
+  /* Add this class for aligning group checkboxes to the left */
+  .groupCheckboxLeft {
+    align-items: flex-start; /* Align to the left */
+  }
+  
+  .groupCheckboxLeft input[type='checkbox'] {
+    margin-right: 0.5rem;
+  }
+  
+  .groupCheckboxLeft label {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
